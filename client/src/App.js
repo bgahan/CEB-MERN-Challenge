@@ -13,7 +13,7 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
-Create Apollo client
+// Create Apollo client
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -35,7 +35,7 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <ApolloClient client={client}>
+    <ApolloProvider client={client}>
       <Router>
         <>
           <Navbar />
@@ -46,7 +46,7 @@ function App() {
           </Switch>
         </>
       </Router>
-    </ApolloClient>
+    </ApolloProvider>
   );
 }
 
