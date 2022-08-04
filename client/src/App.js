@@ -13,7 +13,7 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
-// Create Apollo client
+Create Apollo client
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
